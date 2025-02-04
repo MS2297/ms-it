@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Informaticien</title>
+    
+    <style>
+        /* Style général */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('cyber2.gif.gif'); /* Remplace par le chemin de ton GIF */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Barre de navigation */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #00bcd4;
+        }
+
+        /* Animation du texte "Super Technicien" */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blinkCursor {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .animated-text {
+            font-family: 'Courier New', monospace;
+            font-size: 40px;
+            font-weight: bold;
+            color: #1fd712;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 5px solid #13a6d7;
+            width: fit-content;
+            margin: 100px auto; /* Centrage vertical */
+            animation: typing 3s steps(30, end), blinkCursor 0.75s step-end infinite;
+        }
+
+        /* Animation du nom */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .name-animation {
+            font-family: 'Arial', sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #00bcd4;
+            text-align: center;
+            margin-top: 60px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+    margin-top: -380px; /* Pour ne pas chevaucher ton nom et "Super Technicien" */
+}
+
+.left-text, .right-text {
+    width: 40%;
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(9, 106, 234);
+}
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <div class="navbar">
+        <div>
+            <a href="competancetech.html">Compétences Techniques</a>
+            <a href="Langues.html">Langues</a>
+            <a href="informatique.html">Informatique</a>
+            <a href="diplomes.html">Diplômes et Formations</a>
+            <a href="experiance.html">Expérience Pro</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="apropos.html">Â propos de moi</a>
+        </div>
+        <!-- Barre de recherche -->
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher...">
+            <button>Go</button>
+        </div>
+    </div>
+
+    <!-- Nom animé -->
+    <div class="name-animation">
+        Mujib Sultani
+    </div>
+
+    <!-- Texte animé (dans le corps de la page) -->
+    <div class="animated-text">
+        Super Technicien
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <!-- Ajoute tes sections ici -->
+    </div>
+</body>
+</div>
+
+</html>
